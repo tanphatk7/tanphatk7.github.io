@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nguyễn Tấn Phát</title>
+    <style>
+        :root {
+            --primary-color: #2563eb;
+            --text-color: #333333;
+            --bg-color: #f9fafb;
+            --card-bg: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 60px 0 40px;
+        }
+
+        .avatar {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid white;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: #111;
+        }
+
+        .tagline {
+            font-size: 1.2rem;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .social-links a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+
+        section {
+            background: var(--card-bg);
+            padding: 30px;
+            margin-bottom: 20px;
+            border-radius: 12px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            display: inline-block;
+            font-size: 1.5rem;
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        li::before {
+            content: "•";
+            color: var(--primary-color);
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 6px;
+            transition: background 0.3s;
+            margin-top: 10px;
+        }
+
+        .btn:hover {
+            background-color: #1d4ed8;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            color: #888;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 600px) {
+            h1 { font-size: 2rem; }
+            .container { padding: 15px; }
+            section { padding: 20px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <img src="https://via.placeholder.com/150" alt="Avatar" class="avatar">
+            <h1>Nguyễn Tấn Phát</h1>
+            <p class="tagline">Sinh viên Khoa Khoa học Máy tính | Đại học Công nghệ Thông Tin - UIT</p>
+            
+            <div class="social-links">
+                <a href="https://github.com/tanphatk7" target="_blank">GitHub</a>
+                <a href="mailto:tanphat15022007@gmail.com">Email</a>
+                <a href="https://www.facebook.com/nguyen.tan.phat.784433/" target="_blank">Facebook</a>
+            </div>
+        </header>
+
+        <section id="about">
+            <h2>Giới thiệu</h2>
+            <p>
+                Xin chào! Mình là một sinh viên năm nhất ngành Khoa học Máy tính của trường Công nghệ Thông Tin - ĐHQG.HCM (UIT). 
+                Mình có niềm đam mê lớn với việc xây dựng các ứng dụng web và giải quyết các bài toán về lập trình.
+                Hiện tại, mình đang tìm kiếm cơ hội thực tập để áp dụng kiến thức đã học vào thực tế.
+            </p>
+        </section>
+
+        <section id="skills">
+            <h2>Kỹ năng</h2>
+            <div class="skills-grid">
+                <p><strong>Ngôn ngữ lập trình:</strong> C++, Python</p>
+                <p><strong>Kỹ năng mềm:</strong> Làm việc nhóm, Tiếng Anh (IELTS 7.0)</p>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2025 Nguyễn Tấn Phát. Được xây dựng trên GitHub Pages.</p>
+        </footer>
+    </div>
+
+</body>
+</html>
